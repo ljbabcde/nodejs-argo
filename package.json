@@ -1,21 +1,25 @@
 {
-  "name": "nodejs-argo",
-  "version": "1,0,0",
-  "description": "Thsi is a node project",
-  "main": "index.js",
-  "author": "eooce",
-  "repository": "",
-  "license": "MIT",
-  "private": false,
+  "name": "xray-tool",
+  "version": "1.0.0",
+  "type": "module",   
+  "main": "src/index.ts",
   "scripts": {
-    "dev": "node index.js",
-    "start": "node index.js"
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
   },
   "dependencies": {
-    "axios": "latest",
-    "express": "^4.18.2"
+    "adm-zip": "^0.5.10",
+    "axios": "^1.6.0",
+    "fs-extra": "^11.1.1",
+    "uuid": "^9.0.1"
   },
-  "engines": {
-    "node": ">=14"
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.2",
+    "@types/fs-extra": "^11.0.2",
+    "@types/node": "^20.8.0",
+    "@types/uuid": "^9.0.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
