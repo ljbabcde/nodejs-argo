@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'No build required: using native ES modules'",
-    "dev": "node index.js"
+    "build": "echo 'Build skipped: Using native JS'"
   },
   "dependencies": {
     "adm-zip": "^0.5.10",
     "axios": "^1.6.0",
     "fs-extra": "^11.1.1",
-    "uuid": "^9.0.1"
+    "http-proxy": "^1.18.1"
   }
 }
