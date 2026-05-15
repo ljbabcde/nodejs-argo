@@ -2,7 +2,7 @@ const http = require('http');
 const {spawn} = require('child_process');
 const WebSocket = require('ws');
 
-const PORT = 1000;
+const PORT = process.env.PORT || 8080;
 
 // 1. 创建 HTTP 服务
 const server = http.createServer((req, res) => {
